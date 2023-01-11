@@ -7,4 +7,4 @@ age = age.lower()
 gender = gender.lower()
 
 print("\nI\'ve got a story for you :)")
-print("Hello, my name is " + name + ". I\'m " + age + " years old. I am a lovely " + gender + ".")
+print("Hello, your name is " + name + ". You\'re " + age + " years old. You are lovely " + gender + ".")
