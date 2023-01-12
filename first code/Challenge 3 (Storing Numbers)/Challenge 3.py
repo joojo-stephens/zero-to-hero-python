@@ -1,0 +1,8 @@
+L = input("What is the cost of loan? ")
+i = input("What is the interest rate, (5% / 0.005)? ")
+n = input("What is the number of years for payment? ")
+L = float(L)
+i = float(i)
+n = float(n)
+M = L*(i*(1+i)*n) / ((1+i)*n-1)
+print("Your monthly payment is GHc {0:.2f}" .format(M))
