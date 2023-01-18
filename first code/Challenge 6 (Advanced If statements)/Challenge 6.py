@@ -13,15 +13,15 @@ if country == "canada":
     province = province.lower()
     if province == "alberta":
         alberta = True
-    if province == "ontario" or "new brunswick" or "nova scotia":
+        if alberta:
+            alcharge = charge + gst
+            print("Your total cost for shipping is GHc {0:.2f}".format(alcharge))
+    elif province == "ontario" or "new brunswick" or "nova scotia":
         onn = True
-    if alberta:
-        totalcharge = charge + gst
-        print("Your total cost for shipping is GHc {0:.2f}".format(totalcharge))
-    elif onn:
-        totalcharge = charge + hst
-        print("Your total cost for shipping is GHc {0:.2f}".format(totalcharge))
-    elif not alberta or not onn:
+        if onn:
+            onncharge = charge + hst
+            print("Your total cost for shipping is GHc {0:.2f}".format(onncharge))
+    else:
         totalcharge = charge + pst + hst
         print("Your total cost for shipping is GHc {0:.2f}".format(totalcharge))
 else:
