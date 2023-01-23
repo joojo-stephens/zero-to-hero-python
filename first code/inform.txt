@@ -1,0 +1,11 @@
+Maize, 1012700
+Paddy Rice, 214600
+Millet, 169400
+Sorghum, 279800
+Cassava, 8106800
+Cocoyam, 1625100
+Yam, 3362900
+Plantain, 1932500
+Groundnuts, 208600
+Oil Palm, 1066400
+Beans, 63300
